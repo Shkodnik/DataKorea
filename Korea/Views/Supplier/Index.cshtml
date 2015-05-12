@@ -1,0 +1,28 @@
+﻿@model IEnumerable< SupplierForImport >
+    @{
+        ViewBag.Title = "Список поставциков";
+    }
+    <h1>@ViewBag.Title</h1>
+    @Html.ActionLink("Добавить", "Create", new { @CategoryId = ViewBag.CategoryId }, new { @class = "btn btn-primary" })
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td>Название</td>
+                <td>Вес</td>
+                <td>Операции</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (SupplierForImport supplier in Model)
+            {
+                <tr>
+                    <td class="TitleSupplier">@Html.DisplayFor(modelItem => supplier.Title)</td>
+                    <td class="TableCenter">@Html.DisplayFor(modelItem => supplier.Weight)</td>
+                    <td class="TableBtn">
+                        @Html.ActionLink("Редактировать", "Edit", new { @Id = supplier.Id }, new { @class = "btn btn-primary btn-sm" })
+                        @Html.ActionLink("Удалить", "Delete", new { @Id = supplier.Id }, new { @class = "btn btn-warning btn-sm" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>

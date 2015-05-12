@@ -1,0 +1,108 @@
+﻿@model Korea.Models.Domain.ProductForImport
+
+@{
+    ViewBag.Title = "Создание нового товара. Шаг 2";
+}
+
+
+<div class="mainWidth">
+    <div class="mediumCenterBlock">
+        <h1>@ViewBag.Title</h1>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <dl class="dl-horizontal">
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Name)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Сode)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Сode)
+                    </dd>
+
+                </dl>
+
+
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Generations, "Поколения", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10 edit">
+                            <dl class="dl-horizontal">
+                                @foreach (GenerationForImport productGenerations in Model.Generations)
+                                {
+                                    using (Html.BeginForm("DeleteGeneration", "Product"))
+                                    {
+                                        <dt>
+                                            @Html.DisplayFor(modelItem => productGenerations.Title, "ListManyToMany")
+                                            @Html.Hidden("Views", "CreateStep2")
+                                            @Html.Hidden("productId", Model.Id)
+                                            @Html.Hidden("generationId", productGenerations.Id)
+                                        </dt>
+                                        <dd>
+                                            <input type="submit" value="Удалить" class="btn btn-default btn-xs" />
+                                        </dd>
+                                    }
+                                }
+                            </dl>
+                            @using (Html.BeginForm("addGeneration", "Product"))
+                            {
+                                @Html.DropDownList("GenerationId", ViewData["GenerationsId"] as SelectList, new { @class = "form-control" })
+                                @Html.Hidden("Views", "CreateStep2")
+                                @Html.Hidden("productId", Model.Id)
+                                <input type="submit" value="Добавить" class="btn btn-default btn-sm block" />
+                            }
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Positions, "Позиции", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10 edit">
+                            <dl class="dl-horizontal">
+                                @foreach (PositionForImport productPosition in Model.Positions)
+                                {
+                                    using (Html.BeginForm("DeletePosition", "Product"))
+                                    {
+                                        <dt>
+                                            @Html.DisplayFor(modelItem => productPosition.Title)
+                                            @Html.Hidden("Views", "CreateStep2")
+                                            @Html.Hidden("Position", productPosition.Id)
+                                            @Html.Hidden("productId", Model.Id)
+                                        </dt>
+                                        <dd>
+                                            <input type="submit" value="Удалить" class="btn btn-default btn-xs" />
+                                        </dd>
+                                    }
+                                }
+                            </dl>
+                            @using (Html.BeginForm("addPosition", "Product"))
+                            {
+                                <input class="form-control text-box single-line" name="PositionString" type="text" value="">
+                                @Html.Hidden("Views", "CreateStep2")
+                                @Html.Hidden("productId", Model.Id)
+                                <input type="submit" value="Добавить" class="btn btn-default btn-sm block" />
+                            }
+                        </div>
+                    </div>
+                    @Html.ActionLink("К списку", "Index")
+                </div>
+                 
+               
+            </div>
+    </div>
+
+</div>

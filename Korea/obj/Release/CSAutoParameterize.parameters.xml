@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Server=db.effetto.ru;Initial Catalog=KoreaData;User Id=KoreaData;Password=KoreaData@1444;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Работа\\mvc\\Korea\\Korea\\Korea\\Korea\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="koreaEntities-Web.config Connection String" description="koreaEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Migrations.Model1.csdl|res://*/Migrations.Model1.ssdl|res://*/Migrations.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=db.effetto.ru;initial catalog=korea;persist security info=True;user id=KoreaData;password=KoreaData@1444;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Работа\\mvc\\Korea\\Korea\\Korea\\Korea\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='koreaEntities']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection_DatabasePublish-Web.config Connection String" description="DefaultConnection_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="DefaultConnection_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Работа\\mvc\\Korea\\Korea\\Korea\\Korea\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection_DatabasePublish']/@connectionString" />
+  </parameter>
+</parameters>

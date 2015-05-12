@@ -1,0 +1,41 @@
+﻿@model Korea.Models.Domain.ModelForImport
+
+@{
+    ViewBag.Title = "Удаление модели автомобиля";
+}
+<div class="mainWidth">
+    <div class="mediumCenterBlock">
+        <h1>@ViewBag.Title</h1>
+        <h3>Действительно удалить представленную ниже модель?</h3>
+
+        <div>
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Title)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Title)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Weight)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Weight)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm("Delete", "Model", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(model => model.Id)
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Удалить" class="btn btn-danger" />
+                    @Html.ActionLink("К списку", "Index")
+                </div>
+            }
+        </div>
+</div>
+</div>

@@ -1,0 +1,90 @@
+﻿@model IEnumerable< ProductForImport >
+@using System.Collections.Generic;
+    @{
+        ViewBag.Title = "Список товаров";
+    }
+
+    <h1>@ViewBag.Title</h1>
+    <div class="buttonBlock">
+        @Html.ActionLink("Добавить", "Create", "Product", new { @ProductId = ViewBag.ProductId }, new { @class = "btn btn-primary btn-sm left maineButtonL" })
+        <a class="btn btn-primary btn-sm left maineButtonL" href="~/Category/Index">Редактировать категории</a>
+        <a class="btn btn-primary btn-sm left maineButtonL" href="~/Supplier/Index">Редактировать поставщиков</a>
+        <a class="btn btn-primary btn-sm left maineButtonL" href="~/Model/Index">Редактировать модели</a>
+        <a class="btn btn-primary btn-sm left maineButtonL" href="~/Brand/Index">Редактировать марки</a>
+        <a class="btn btn-primary btn-sm left maineButtonL" href="~/Generation/Index">Редактировать поколения</a>
+        <a class="btn btn-primary btn-sm left maineButtonL" href="~/Position/Index">Редактирование позиции</a>
+     </div>
+<div class="buttonBlock">
+    @using (Html.BeginForm("Load", "Import", FormMethod.Post))
+    {
+        <input type="submit" value="Выгрузить" class="btn btn-primary btn-sm right maineButtonR" />
+    }
+    @using (Html.BeginForm("Index", "Download", FormMethod.Post))
+    {
+        <input type="submit" value="Загрузить" class="btn btn-primary btn-sm right maineButtonR" />
+    }
+</div>
+
+    <form action="/Product/Search/">
+    <table class="table table-hover" id="colorTable">
+
+        <thead>
+
+            <tr>
+                <td>Артикул</td>
+                <td>Название</td>
+                <td>Категория</td>
+                <td>Поколения</td>
+                <td>Позиции</td>
+                <td>Операции</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="СodeN" class="form-control"></td>
+                <td><input type="text" name="NameN" class="form-control"></td>
+                <td><input type="text" name="CategoryN" class="form-control"></td>
+                <td><input type="text" name="GenerationN" class="form-control"></td>
+                <td><input type="text" name="PositionN" class="form-control"></td>
+                <td><input type="submit" value="Поиск" class="btn btn-primary"></td>
+            </tr>
+        </thead>
+        <tbody >
+@*@for (int i = 0; i < 200; i++)
+{ 
+            <tr class="scroll">
+                <td>!!!!!!!!!</td>
+                <td>!!!!!!!!!</td>
+                <td>!!!!!!!!!</td>
+                <td>!!!!!!!!!</td>
+                <td>!!!!!!!!!</td>
+                <td>!!!!!!!!!</td>
+            </tr>
+}*@
+
+            @foreach (ProductForImport product in Model)
+{
+    <tr class="jscroll-added">
+        <td class="tablecode">
+            @Html.DisplayFor(modelItem => product.Сode)
+        </td>
+        <td class="tableName">@Html.DisplayFor(modelItem => product.Name)</td>
+        <td class="tableCategory">@Html.DisplayFor(modelItem => product.Category.Title)</td>
+        <td class="tableDescription">@Html.Action("PIndex", "Product", product)</td>
+        <td class="tablePosition">@Html.Action("PIndexPosition", "Product", product)</td>
+        <td class="tableButton">
+            <div class="centerButtonCenterBlock">
+                @Html.ActionLink(" ", "Edit", "Product", new { @Id = product.Id }, new { @class = "glyphicon glyphicon-pencil editButton" })
+                @Html.ActionLink(" ", "Delete", "Product", new { @Id = product.Id }, new { @class = "buttonDelet" })
+            </div>
+        </td>
+    </tr>
+}
+        </tbody>
+    </table>
+</form>
+
+
+
+
+
+
+

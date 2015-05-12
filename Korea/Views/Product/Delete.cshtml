@@ -1,0 +1,45 @@
+﻿@model Korea.Models.Domain.ProductForImport
+
+@{
+    ViewBag.Title = "Удаление продукции";
+}
+<div class="mainWidth">
+    <div class="mediumCenterBlock">
+        <h2>@ViewBag.Title</h2>
+
+        <h3>Действительно удалить представленный ниже продукт?</h3>
+        <div>
+            <dl class="dl-horizontal">
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Сode)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Сode)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                
+                @Html.HiddenFor(model => model.Id)
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Delete" class="btn btn-default" /> |
+                    @Html.ActionLink("К списку", "Index")
+                </div>
+            }
+        </div>
+</div>
+</div>

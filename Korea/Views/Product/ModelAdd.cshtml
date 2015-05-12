@@ -1,0 +1,45 @@
+﻿@model Korea.Models.Domain.ProductForImport
+
+@{
+    ViewBag.Title = "Редактирование продукции";
+}
+<div class="mainWidth">
+    <div class="mediumCenterBlock">
+        <h1>@ViewBag.Title</h1>
+
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Models, "Models", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10 edit">
+                <dl class="dl-horizontal">
+                    @foreach (ModelForImport productModels in Model.Models)
+                    {
+                        using (Html.BeginForm("DeleteModel", "Product"))
+                        {
+                            <dt>
+                                @Html.DisplayFor(modelItem => productModels.Title)
+                                @Html.Hidden("productId", Model.Id)
+                                @Html.Hidden("modelId", productModels.Id)
+                            </dt>
+                            <dd>
+                                <input type="submit" value="Удалить" class="" />
+                            </dd>
+                        }
+                    }
+                </dl>
+                @using (Html.BeginForm("addModel", "Product"))
+                {
+                    @Html.DropDownList("modelId", ViewData["Models"] as SelectList)
+                    @Html.Hidden("productId", Model.Id)
+                    <input type="submit" value="Добавить" class="" />
+                }
+            </div>
+        </div>
+        <div>
+            @Html.ActionLink("Готово", "Index")
+        </div>
+    </div>
+</div>
+

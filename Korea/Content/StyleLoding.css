@@ -1,0 +1,6 @@
+﻿body div{
+    width: auto;
+    height: auto;
+    min-height: 500px;
+    background: #ffffff url(/Content/Images/loading_big.gif) center center no-repeat;
+}

@@ -1,0 +1,13 @@
+C:\Работа\mvc\Korea\Korea\Korea\Korea\bin\Korea.dll.config
+C:\Работа\mvc\Korea\Korea\Korea\Korea\bin\Korea.dll
+C:\Работа\mvc\Korea\Korea\Korea\Korea\bin\Korea.pdb
+C:\Работа\mvc\Korea\Korea\Korea\Korea\bin\Antlr3.Runtime.dll
+C:\Работа\mvc\Korea\Korea\Korea\Korea\bin\LinqToExcel.dll
+C:\Работа\mvc\Korea\Korea\Korea\Korea\bin\Antlr3.Runtime.pdb
+C:\Работа\mvc\Korea\Korea\Korea\Korea\bin\LinqToExcel.xml
+C:\Работа\mvc\Korea\Korea\Korea\Korea\obj\Release\Korea.csproj.ResolveComReference.cache
+C:\Работа\mvc\Korea\Korea\Korea\Korea\obj\Release\Korea.Migrations.export.resources
+C:\Работа\mvc\Korea\Korea\Korea\Korea\obj\Release\Korea.Migrations.export2.resources
+C:\Работа\mvc\Korea\Korea\Korea\Korea\obj\Release\Korea.csproj.GenerateResource.Cache
+C:\Работа\mvc\Korea\Korea\Korea\Korea\obj\Release\Korea.dll
+C:\Работа\mvc\Korea\Korea\Korea\Korea\obj\Release\Korea.pdb

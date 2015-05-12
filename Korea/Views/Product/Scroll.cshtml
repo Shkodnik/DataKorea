@@ -1,0 +1,35 @@
+﻿@*@model IEnumerable< ProductForImport >
+
+
+@foreach (ProductForImport product in Model)
+{
+    <tr class="jscroll-added">
+        <td class="tablecode">
+            @Html.DisplayFor(modelItem => product.Сode)
+        </td>
+        <td class="tableName">@Html.DisplayFor(modelItem => product.Name)</td>
+        <td class="tableCategory">@Html.DisplayFor(modelItem => product.Category.Title)</td>
+        <td class="tableDescription">@Html.Action("PIndex", "Product", product)</td>
+        <td class="tablePosition">@Html.Action("PIndexPosition", "Product", product)</td>
+        <td class="tableButton">
+            <div class="centerButtonCenterBlock">
+                @Html.ActionLink(" ", "Edit", "Product", new { @Id = product.Id }, new { @class = "glyphicon glyphicon-pencil editButton" })
+                @Html.ActionLink(" ", "Delete", "Product", new { @Id = product.Id }, new { @class = "buttonDelet" })
+            </div>
+        </td>
+    </tr>
+}
+<tr class="Hidden">
+    <td class="Hidden">
+        <a href="~/Product/Scroll/@Model.Last().Id"></a>
+    </td>
+</tr>*@
+
+<tr>
+    <td>!!!!!!!!!</td>
+    <td>!!!!!!!!!</td>
+    <td>!!!!!!!!!</td>
+    <td>!!!!!!!!!</td>
+    <td>!!!!!!!!!</td>
+    <td>!!!!!!!!!</td>
+</tr>

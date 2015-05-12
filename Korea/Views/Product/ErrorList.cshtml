@@ -1,0 +1,11 @@
+﻿@model IEnumerable< string >
+@{
+    ViewBag.Title = "Список ошибок";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@foreach (string item in Model)
+{
+    <p>@Html.DisplayFor(modelItem => item)</p>
+}

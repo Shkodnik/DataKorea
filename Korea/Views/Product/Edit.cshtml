@@ -1,0 +1,158 @@
+﻿@model Korea.Models.Domain.ProductForImport
+
+@{
+    ViewBag.Title = "Редактирование продукции";
+}
+<div class="mainWidth">
+    <div class="mediumCenterBlock">
+        <h1>@ViewBag.Title</h1>
+
+
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                @Html.LabelFor(model => model.Generations, "Поколения", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10 edit">
+                    <dl class="dl-horizontal">
+                        @foreach (GenerationForImport productGenerations in Model.Generations)
+{
+    using (Html.BeginForm("DeleteGeneration", "Product"))
+    {
+        <dt class="ListManyToMany">
+            @Html.DisplayFor(modelItem => productGenerations.Title, "ListManyToMany")
+            @Html.Hidden("productId", Model.Id)
+            @Html.Hidden("generationId", productGenerations.Id)
+            @Html.Hidden("Views", "Edit")
+        </dt>
+                                <dd>
+                                    <input type="submit" value="Удалить" class="btn btn-default btn-xs" />
+                                </dd>
+    }
+                        }
+                    </dl>
+                    @using (Html.BeginForm("addGeneration", "Product"))
+                    {
+                    @Html.DropDownList("GenerationId", ViewData["GenerationsId"] as SelectList, new { @class = "form-control" } )
+                    @Html.Hidden("Views", "Edit")
+                    @Html.Hidden("productId", Model.Id)
+                        <input type="submit" value="Добавить" class="btn btn-default btn-sm block" />
+                    }
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Positions, "Позиции", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10 edit">
+                    <dl class="dl-horizontal">
+                        @foreach (PositionForImport productPosition in Model.Positions)
+{
+    using (Html.BeginForm("DeletePosition", "Product"))
+    {
+        <dt class="ListManyToMany">
+            @Html.DisplayFor(modelItem => productPosition.Title)
+            @Html.Hidden("Position", productPosition.Id)
+            @Html.Hidden("productId", Model.Id)
+            @Html.Hidden("Views", "Edit")
+        </dt>
+                                                        <dd>
+                                    <input type="submit" value="Удалить" class="btn btn-default btn-xs" />
+                                </dd>
+    }
+                        }
+                    </dl>
+                    @using (Html.BeginForm("addPosition", "Product"))
+                    {
+                        <input class="form-control text-box single-line" name="PositionString" type="text" value="">
+                        @Html.Hidden("Views", "Edit")
+                        @Html.Hidden("productId", Model.Id)
+    <input type="submit" value="Добавить" class="btn btn-default btn-sm block" />
+                    }
+                </div>
+            </div>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                @Html.ValidationSummary(true)
+                @Html.HiddenFor(model => model.Id)
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Сode, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Сode, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Сode, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Cost, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10 ListManyToMany textProduct">
+                        @Html.DisplayFor(model => model.Cost)
+                         руб.
+                    </div>
+                </div>
+                          
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Tale, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10 ListManyToMany textProduct">
+                        @Html.DisplayFor(model => model.Tale)
+                         шт.
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.CategoryId, "CategoryId", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.CategoryId, null, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.CategoryId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Description, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.SupplierId, "SupplierId", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.SupplierId, null, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.SupplierId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                @*<div class="form-group">
+                    @Html.LabelFor(model => model.Position, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Position, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Position, "", new { @class = "text-danger" })
+                    </div>
+                </div>*@
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Save" class="btn btn-default" />
+                    </div>
+                </div>
+
+            }
+        </div>
+        <div>
+            @Html.ActionLink("К списку", "Index")
+        </div>
+</div>
+</div>

@@ -1,0 +1,9 @@
+﻿@model ICollection< PositionForImport >
+@{
+    ViewBag.Title = "PIndex";
+}
+
+@foreach (PositionForImport idex in Model)
+{
+    <p>@Html.DisplayFor(modelItem => idex.Title)</p> <br />
+}

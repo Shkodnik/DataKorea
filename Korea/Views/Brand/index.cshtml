@@ -1,0 +1,30 @@
+﻿@model IEnumerable< BrandForImport >
+    @{
+        ViewBag.Title = "Список марок";
+    }
+    <h1>@ViewBag.Title</h1>
+    @Html.ActionLink("Добавить", "Create", null, new { @class = "btn btn-primary" })
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td>Название</td>
+                <td>Абривиатура для загрузки</td>
+                <td>Вес</td>
+                <td>Операции</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (BrandForImport brand in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => brand.Title)</td>
+                    <td>@Html.DisplayFor(modelItem => brand.Abbreviation)</td>
+                    <td class="TableCenter">@Html.DisplayFor(modelItem => brand.Weight)</td>
+                    <td class="TableBtn">
+                        @Html.ActionLink("Редактировать", "Edit", new { @Id = brand.Id }, new { @class = "btn btn-primary btn-sm" })
+                        @Html.ActionLink("Удалить", "Delete", new { @Id = brand.Id }, new { @class = "btn btn-warning btn-sm" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e5579ab40a63417db7bfefd9f6a39575" Name="Diagram1">
+        <EntityTypeShape EntityType="koreaModel.Brand" Width="1.5" PointX="1.5" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Category" Width="1.5" PointX="5.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Color" Width="1.5" PointX="1.5" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Coupon" Width="1.5" PointX="3" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Currency" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.CustomOption" Width="1.5" PointX="3" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.FileLibrary" Width="1.5" PointX="9.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ImportLog" Width="1.5" PointX="3.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Offer" Width="1.5" PointX="6" PointY="27.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OnlineClientInfo" Width="1.5" PointX="11.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OptionPriceType" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Option" Width="1.5" PointX="5.25" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Photo" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Product" Width="1.5" PointX="0.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ProductCategory" Width="1.5" PointX="8" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ProductFile" Width="1.5" PointX="3" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ProductPropertyValue" Width="1.5" PointX="8" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ProductVideo" Width="1.5" PointX="3" PointY="39.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Property" Width="1.5" PointX="3.5" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.PropertyValue" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Ratio" Width="1.5" PointX="3" PointY="42.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.RelatedProduct" Width="1.5" PointX="10.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ShoppingCart" Width="1.5" PointX="8.25" PointY="32.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Size" Width="1.5" PointX="3.75" PointY="46" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Tax" Width="1.5" PointX="9" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.TaxRegionRate" Width="1.5" PointX="11.25" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.BottomMenu" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Carousel" Width="1.5" PointX="13.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.GeoCity" Width="1.5" PointX="8.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.MainMenu" Width="1.5" PointX="13.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.PointCity" Width="1.5" PointX="11" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Review" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.StaticBlock" Width="1.5" PointX="14.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.StaticPage" Width="1.5" PointX="15.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.City" Width="1.5" PointX="1.5" PointY="60.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Contact" Width="1.5" PointX="12.5" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Country" Width="1.5" PointX="1.5" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Country_ru" Width="1.5" PointX="15.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Customer" Width="1.5" PointX="10.25" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.CustomerCertificate" Width="1.5" PointX="5.25" PointY="73.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.CustomerCoupon" Width="1.5" PointX="5.25" PointY="33" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.CustomerGroup" Width="1.5" PointX="8" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.GeoIP" Width="1.5" PointX="14.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.RecentlyViewsData" Width="1.5" PointX="3" PointY="49.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Region" Width="1.5" PointX="1.5" PointY="64.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.RoleAction" Width="1.5" PointX="16.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ASPStateTempApplication" Width="1.5" PointX="10.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ASPStateTempSession" Width="1.5" PointX="16.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.BreakMessage" Width="1.5" PointX="16.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.MessageLog" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Module" Width="1.5" PointX="17.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.SaasData" Width="1.5" PointX="18.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Subscribe" Width="1.5" PointX="18.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.SubscribeDeactivateReason" Width="1.5" PointX="18.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.sysdiagram" Width="1.5" PointX="14.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.AppRestartLog" Width="1.5" PointX="18.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Certificate" Width="1.5" PointX="3" PointY="72.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Order" Width="1.5" PointX="0.75" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OrderByRequest" Width="1.5" PointX="16.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OrderConfirmation" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OrderContact" Width="1.5" PointX="18.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OrderCurrency" Width="1.5" PointX="3" PointY="77.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OrderCustomer" Width="1.5" PointX="3" PointY="80.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OrderCustomOption" Width="1.5" PointX="5.25" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OrderItem" Width="1.5" PointX="3" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OrderPickPoint" Width="1.5" PointX="3" PointY="83.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OrderPriceDiscount" Width="1.5" PointX="19.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OrderStatu" Width="1.5" PointX="1.5" PointY="45.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OrderTax" Width="1.5" PointX="3" PointY="86.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.PaymentDetail" Width="1.5" PointX="3" PointY="89.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.PaymentMethod" Width="1.5" PointX="1.5" PointY="52.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.PaymentParam" Width="1.5" PointX="3.75" PointY="52.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ShippingMethod" Width="1.5" PointX="1.5" PointY="68.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ShippingParam" Width="1.5" PointX="3.75" PointY="69" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.MetaInfo" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Setting" Width="1.5" PointX="20.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.AuthorizeLog" Width="1.5" PointX="20.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ExportFeedHistory" Width="1.5" PointX="20.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ExportFeedSelectedCategory" Width="1.5" PointX="8" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ExportFeedSelectedProduct" Width="1.5" PointX="3" PointY="57.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.GiftCertificateTax" Width="1.5" PointX="11.25" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.InternalSetting" Width="1.5" PointX="20.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Language" Width="1.5" PointX="21.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.MailFormat" Width="1.5" PointX="20.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.MailFormatType" Width="1.5" PointX="21.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ModuleSetting" Width="1.5" PointX="22.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.News" Width="1.5" PointX="10" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.NewsCategory" Width="1.5" PointX="7.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ProfitPlan" Width="1.5" PointX="22.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Ranx" Width="1.5" PointX="22.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Redirect" Width="1.5" PointX="22.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Settings1" Width="1.5" PointX="22.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.SearchStatistic" Width="1.5" PointX="22.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Answer" Width="1.5" PointX="6" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.VoiceTheme" Width="1.5" PointX="3.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ClientInfo" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.Country_en" Width="1.5" PointX="23.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.CustomerRoleAction" Width="1.5" PointX="12.5" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OpenIdLinkCustomer" Width="1.5" PointX="12.5" PointY="31.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.AdminMessage" Width="1.5" PointX="24.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.OrderPaymentInfo" Width="1.5" PointX="5.75" PointY="42.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.GiftCertificatePayment" Width="1.5" PointX="3.75" PointY="55.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="koreaModel.ViewAbandonedShoppingCart" Width="1.5" PointX="24.75" PointY="12.75" IsExpanded="true" />
+        <AssociationConnector Association="koreaModel.FK_Brand_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Product_Brand" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_ExportFeedSelectedCategories_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_ProductCategories_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Offer_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Photo_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_CustomerCoupon_Coupon" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_CustomOptions_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Options_CustomOptions" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Offer_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Offer_Size" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_ShoppingCart_Offer" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_OrderItems_Photo" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_ExportFeedSelectedProducts_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_OrderItems_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_ProductCategories_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_ProductFile_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_ProductVideo_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_PropertyValueMappingOnProduct_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Ratio_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_RecentlyViewsData_Product1" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_PropertyValueMappingOnProduct_PropertyValue" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_ProductProperty_Property" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_GiftCertificateTaxes_Tax" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Tax_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_TaxRegionRate_Tax" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_PointCity_GeoCity" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_City_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Contact_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Contact_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Contact_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Country_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Customer_CustomerGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_CustomerRoleAction_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_OpenIdLinkCustomer_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_CustomerCertificate_Certificate" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Certificate_Certificate" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Certificate_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Order_OrderStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Order_PaymentMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Order_ShippingMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_OrderCurrency_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_OrderCustomer_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_OrderedCart_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_OrderPaymentInfo_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_OrderPickPoint_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_OrderTax_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_PaymentDetails_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_OrderCustomOptions_OrderedCart" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_GiftCertificatePayments_PaymentMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_OrderPaymentInfo_PaymentMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_PaymentParam_PaymentMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_ShippingParam_ShippingMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_News_NewsCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.FK_Answer_VoiceTheme" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.CouponCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.CouponCustomers" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.CouponProducts" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.TaxMappingOnProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.TaxSelectedCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.PaymentCity" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.PaymentCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.ShippingCity" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.ShippingCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="koreaModel.ShippingPayments" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

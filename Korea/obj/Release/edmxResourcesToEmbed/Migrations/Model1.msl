@@ -1,0 +1,1327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="koreaModelStoreContainer" CdmEntityContainer="koreaEntities">
+    <EntitySetMapping Name="Brands">
+      <EntityTypeMapping TypeName="koreaModel.Brand">
+        <MappingFragment StoreEntitySet="Brand">
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="BrandDescription" ColumnName="BrandDescription" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="UrlPath" ColumnName="UrlPath" />
+          <ScalarProperty Name="BrandBriefDescription" ColumnName="BrandBriefDescription" />
+          <ScalarProperty Name="BrandSiteUrl" ColumnName="BrandSiteUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="koreaModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParentCategory" ColumnName="ParentCategory" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Products_Count" ColumnName="Products_Count" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Total_Products_Count" ColumnName="Total_Products_Count" />
+          <ScalarProperty Name="DisplayStyle" ColumnName="DisplayStyle" />
+          <ScalarProperty Name="DisplayChildProducts" ColumnName="DisplayChildProducts" />
+          <ScalarProperty Name="UrlPath" ColumnName="UrlPath" />
+          <ScalarProperty Name="HirecalEnabled" ColumnName="HirecalEnabled" />
+          <ScalarProperty Name="DisplayBrandsInMenu" ColumnName="DisplayBrandsInMenu" />
+          <ScalarProperty Name="DisplaySubCategoriesInMenu" ColumnName="DisplaySubCategoriesInMenu" />
+          <ScalarProperty Name="CatLevel" ColumnName="CatLevel" />
+          <ScalarProperty Name="BriefDescription" ColumnName="BriefDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Colors">
+      <EntityTypeMapping TypeName="koreaModel.Color">
+        <MappingFragment StoreEntitySet="Color">
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="ColorCode" ColumnName="ColorCode" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Coupons">
+      <EntityTypeMapping TypeName="koreaModel.Coupon">
+        <MappingFragment StoreEntitySet="Coupon">
+          <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="AddingDate" ColumnName="AddingDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="PossibleUses" ColumnName="PossibleUses" />
+          <ScalarProperty Name="ActualUses" ColumnName="ActualUses" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="MinimalOrderPrice" ColumnName="MinimalOrderPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="koreaModel.Currency">
+        <MappingFragment StoreEntitySet="Currency">
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CurrencyValue" ColumnName="CurrencyValue" />
+          <ScalarProperty Name="CurrencyIso3" ColumnName="CurrencyIso3" />
+          <ScalarProperty Name="IsCodeBefore" ColumnName="IsCodeBefore" />
+          <ScalarProperty Name="PriceFormat" ColumnName="PriceFormat" />
+          <ScalarProperty Name="CurrencyNumIso3" ColumnName="CurrencyNumIso3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomOptions">
+      <EntityTypeMapping TypeName="koreaModel.CustomOption">
+        <MappingFragment StoreEntitySet="CustomOptions">
+          <ScalarProperty Name="CustomOptionsID" ColumnName="CustomOptionsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="IsRequired" ColumnName="IsRequired" />
+          <ScalarProperty Name="InputType" ColumnName="InputType" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FileLibraries">
+      <EntityTypeMapping TypeName="koreaModel.FileLibrary">
+        <MappingFragment StoreEntitySet="FileLibrary">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ItemParentID" ColumnName="ItemParentID" />
+          <ScalarProperty Name="ItemIcon" ColumnName="ItemIcon" />
+          <ScalarProperty Name="ItemType" ColumnName="ItemType" />
+          <ScalarProperty Name="filePath" ColumnName="filePath" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImportLogs">
+      <EntityTypeMapping TypeName="koreaModel.ImportLog">
+        <MappingFragment StoreEntitySet="ImportLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="mtype" ColumnName="mtype" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Offers">
+      <EntityTypeMapping TypeName="koreaModel.Offer">
+        <MappingFragment StoreEntitySet="Offer">
+          <ScalarProperty Name="OfferID" ColumnName="OfferID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="SupplyPrice" ColumnName="SupplyPrice" />
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="SizeID" ColumnName="SizeID" />
+          <ScalarProperty Name="ArtNo" ColumnName="ArtNo" />
+          <ScalarProperty Name="Main" ColumnName="Main" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OnlineClientInfoes">
+      <EntityTypeMapping TypeName="koreaModel.OnlineClientInfo">
+        <MappingFragment StoreEntitySet="OnlineClientInfo">
+          <ScalarProperty Name="sessionID" ColumnName="sessionID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="UserAgentBrowser" ColumnName="UserAgentBrowser" />
+          <ScalarProperty Name="LastAccessedPath" ColumnName="LastAccessedPath" />
+          <ScalarProperty Name="Started" ColumnName="Started" />
+          <ScalarProperty Name="UserAgentOS" ColumnName="UserAgentOS" />
+          <ScalarProperty Name="CountryByGeoIp" ColumnName="CountryByGeoIp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OptionPriceTypes">
+      <EntityTypeMapping TypeName="koreaModel.OptionPriceType">
+        <MappingFragment StoreEntitySet="OptionPriceTypes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="StringKey" ColumnName="StringKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Options">
+      <EntityTypeMapping TypeName="koreaModel.Option">
+        <MappingFragment StoreEntitySet="Options">
+          <ScalarProperty Name="OptionID" ColumnName="OptionID" />
+          <ScalarProperty Name="CustomOptionsID" ColumnName="CustomOptionsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="PriceBC" ColumnName="PriceBC" />
+          <ScalarProperty Name="PriceType" ColumnName="PriceType" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Photos">
+      <EntityTypeMapping TypeName="koreaModel.Photo">
+        <MappingFragment StoreEntitySet="Photo">
+          <ScalarProperty Name="PhotoId" ColumnName="PhotoId" />
+          <ScalarProperty Name="ObjId" ColumnName="ObjId" />
+          <ScalarProperty Name="PhotoName" ColumnName="PhotoName" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PhotoSortOrder" ColumnName="PhotoSortOrder" />
+          <ScalarProperty Name="Main" ColumnName="Main" />
+          <ScalarProperty Name="OriginName" ColumnName="OriginName" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="koreaModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ArtNo" ColumnName="ArtNo" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Ratio" ColumnName="Ratio" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="BriefDescription" ColumnName="BriefDescription" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+          <ScalarProperty Name="Recomended" ColumnName="Recomended" />
+          <ScalarProperty Name="New" ColumnName="New" />
+          <ScalarProperty Name="Bestseller" ColumnName="Bestseller" />
+          <ScalarProperty Name="OnSale" ColumnName="OnSale" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="AllowPreOrder" ColumnName="AllowPreOrder" />
+          <ScalarProperty Name="SortBestseller" ColumnName="SortBestseller" />
+          <ScalarProperty Name="SortNew" ColumnName="SortNew" />
+          <ScalarProperty Name="SortDiscount" ColumnName="SortDiscount" />
+          <ScalarProperty Name="UrlPath" ColumnName="UrlPath" />
+          <ScalarProperty Name="CategoryEnabled" ColumnName="CategoryEnabled" />
+          <ScalarProperty Name="SalesNote" ColumnName="SalesNote" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="ShippingPrice" ColumnName="ShippingPrice" />
+          <ScalarProperty Name="MinAmount" ColumnName="MinAmount" />
+          <ScalarProperty Name="MaxAmount" ColumnName="MaxAmount" />
+          <ScalarProperty Name="Multiplicity" ColumnName="Multiplicity" />
+          <ScalarProperty Name="HasMultiOffer" ColumnName="HasMultiOffer" />
+          <ScalarProperty Name="Instructions" ColumnName="Instructions" />
+          <ScalarProperty Name="SpecialCat" ColumnName="SpecialCat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductCategories">
+      <EntityTypeMapping TypeName="koreaModel.ProductCategory">
+        <MappingFragment StoreEntitySet="ProductCategories">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Main" ColumnName="Main" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductFiles">
+      <EntityTypeMapping TypeName="koreaModel.ProductFile">
+        <MappingFragment StoreEntitySet="ProductFile">
+          <ScalarProperty Name="ProductFileID" ColumnName="ProductFileID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Filename" ColumnName="Filename" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductPropertyValues">
+      <EntityTypeMapping TypeName="koreaModel.ProductPropertyValue">
+        <MappingFragment StoreEntitySet="ProductPropertyValue">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="PropertyValueID" ColumnName="PropertyValueID" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductVideos">
+      <EntityTypeMapping TypeName="koreaModel.ProductVideo">
+        <MappingFragment StoreEntitySet="ProductVideo">
+          <ScalarProperty Name="ProductVideoID" ColumnName="ProductVideoID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PlayerCode" ColumnName="PlayerCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="VideoSortOrder" ColumnName="VideoSortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Properties">
+      <EntityTypeMapping TypeName="koreaModel.Property">
+        <MappingFragment StoreEntitySet="Property">
+          <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UseInFilter" ColumnName="UseInFilter" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Expanded" ColumnName="Expanded" />
+          <ScalarProperty Name="IsModel" ColumnName="IsModel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyValues">
+      <EntityTypeMapping TypeName="koreaModel.PropertyValue">
+        <MappingFragment StoreEntitySet="PropertyValue">
+          <ScalarProperty Name="PropertyValueID" ColumnName="PropertyValueID" />
+          <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="UseInFilter" ColumnName="UseInFilter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ratios">
+      <EntityTypeMapping TypeName="koreaModel.Ratio">
+        <MappingFragment StoreEntitySet="Ratio">
+          <ScalarProperty Name="RatioID" ColumnName="RatioID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductRatio" ColumnName="ProductRatio" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RelatedProducts">
+      <EntityTypeMapping TypeName="koreaModel.RelatedProduct">
+        <MappingFragment StoreEntitySet="RelatedProducts">
+          <ScalarProperty Name="RelatedProductID" ColumnName="RelatedProductID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="LinkedProductID" ColumnName="LinkedProductID" />
+          <ScalarProperty Name="RelatedType" ColumnName="RelatedType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShoppingCarts">
+      <EntityTypeMapping TypeName="koreaModel.ShoppingCart">
+        <MappingFragment StoreEntitySet="ShoppingCart">
+          <ScalarProperty Name="ShoppingCartItemId" ColumnName="ShoppingCartItemId" />
+          <ScalarProperty Name="ShoppingCartType" ColumnName="ShoppingCartType" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="OfferId" ColumnName="OfferId" />
+          <ScalarProperty Name="AttributesXml" ColumnName="AttributesXml" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sizes">
+      <EntityTypeMapping TypeName="koreaModel.Size">
+        <MappingFragment StoreEntitySet="Size">
+          <ScalarProperty Name="SizeID" ColumnName="SizeID" />
+          <ScalarProperty Name="SizeName" ColumnName="SizeName" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Taxes">
+      <EntityTypeMapping TypeName="koreaModel.Tax">
+        <MappingFragment StoreEntitySet="Tax">
+          <ScalarProperty Name="TaxID" ColumnName="TaxID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="DependsOnAddress" ColumnName="DependsOnAddress" />
+          <ScalarProperty Name="ShowInPrice" ColumnName="ShowInPrice" />
+          <ScalarProperty Name="RegNumber" ColumnName="RegNumber" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="RateType" ColumnName="RateType" />
+          <ScalarProperty Name="FederalRate" ColumnName="FederalRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaxRegionRates">
+      <EntityTypeMapping TypeName="koreaModel.TaxRegionRate">
+        <MappingFragment StoreEntitySet="TaxRegionRate">
+          <ScalarProperty Name="TaxID" ColumnName="TaxID" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="RegionRate" ColumnName="RegionRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BottomMenus">
+      <EntityTypeMapping TypeName="koreaModel.BottomMenu">
+        <MappingFragment StoreEntitySet="BottomMenu">
+          <ScalarProperty Name="MenuItemID" ColumnName="MenuItemID" />
+          <ScalarProperty Name="MenuItemParentID" ColumnName="MenuItemParentID" />
+          <ScalarProperty Name="MenuItemName" ColumnName="MenuItemName" />
+          <ScalarProperty Name="MenuItemUrlType" ColumnName="MenuItemUrlType" />
+          <ScalarProperty Name="MenuItemUrlPath" ColumnName="MenuItemUrlPath" />
+          <ScalarProperty Name="MenuItemIcon" ColumnName="MenuItemIcon" />
+          <ScalarProperty Name="ShowMode" ColumnName="ShowMode" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Blank" ColumnName="Blank" />
+          <ScalarProperty Name="NoFollow" ColumnName="NoFollow" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carousels">
+      <EntityTypeMapping TypeName="koreaModel.Carousel">
+        <MappingFragment StoreEntitySet="Carousel">
+          <ScalarProperty Name="CarouselID" ColumnName="CarouselID" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeoCities">
+      <EntityTypeMapping TypeName="koreaModel.GeoCity">
+        <MappingFragment StoreEntitySet="GeoCity">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="CitySort" ColumnName="CitySort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MainMenus">
+      <EntityTypeMapping TypeName="koreaModel.MainMenu">
+        <MappingFragment StoreEntitySet="MainMenu">
+          <ScalarProperty Name="MenuItemID" ColumnName="MenuItemID" />
+          <ScalarProperty Name="MenuItemParentID" ColumnName="MenuItemParentID" />
+          <ScalarProperty Name="MenuItemName" ColumnName="MenuItemName" />
+          <ScalarProperty Name="MenuItemUrlType" ColumnName="MenuItemUrlType" />
+          <ScalarProperty Name="MenuItemUrlPath" ColumnName="MenuItemUrlPath" />
+          <ScalarProperty Name="MenuItemIcon" ColumnName="MenuItemIcon" />
+          <ScalarProperty Name="ShowMode" ColumnName="ShowMode" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Blank" ColumnName="Blank" />
+          <ScalarProperty Name="NoFollow" ColumnName="NoFollow" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PointCities">
+      <EntityTypeMapping TypeName="koreaModel.PointCity">
+        <MappingFragment StoreEntitySet="PointCity">
+          <ScalarProperty Name="PointId" ColumnName="PointId" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="WorkTime" ColumnName="WorkTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reviews">
+      <EntityTypeMapping TypeName="koreaModel.Review">
+        <MappingFragment StoreEntitySet="Review">
+          <ScalarProperty Name="ReviewId" ColumnName="ReviewId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Checked" ColumnName="Checked" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StaticBlocks">
+      <EntityTypeMapping TypeName="koreaModel.StaticBlock">
+        <MappingFragment StoreEntitySet="StaticBlock">
+          <ScalarProperty Name="StaticBlockID" ColumnName="StaticBlockID" />
+          <ScalarProperty Name="Key" ColumnName="Key" />
+          <ScalarProperty Name="InnerName" ColumnName="InnerName" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Added" ColumnName="Added" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StaticPages">
+      <EntityTypeMapping TypeName="koreaModel.StaticPage">
+        <MappingFragment StoreEntitySet="StaticPage">
+          <ScalarProperty Name="StaticPageID" ColumnName="StaticPageID" />
+          <ScalarProperty Name="PageName" ColumnName="PageName" />
+          <ScalarProperty Name="PageText" ColumnName="PageText" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="IndexAtSiteMap" ColumnName="IndexAtSiteMap" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="UrlPath" ColumnName="UrlPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="koreaModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="CitySort" ColumnName="CitySort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="koreaModel.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="koreaModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryISO2" ColumnName="CountryISO2" />
+          <ScalarProperty Name="CountryISO3" ColumnName="CountryISO3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Country_ru">
+      <EntityTypeMapping TypeName="koreaModel.Country_ru">
+        <MappingFragment StoreEntitySet="Country_ru">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryISO2" ColumnName="CountryISO2" />
+          <ScalarProperty Name="CountryISO3" ColumnName="CountryISO3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="koreaModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="RegistrationDateTime" ColumnName="RegistrationDateTime" />
+          <ScalarProperty Name="Subscribed4News" ColumnName="Subscribed4News" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CustomerGroupId" ColumnName="CustomerGroupId" />
+          <ScalarProperty Name="CustomerRole" ColumnName="CustomerRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerCertificates">
+      <EntityTypeMapping TypeName="koreaModel.CustomerCertificate">
+        <MappingFragment StoreEntitySet="CustomerCertificate">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CertificateID" ColumnName="CertificateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerCoupons">
+      <EntityTypeMapping TypeName="koreaModel.CustomerCoupon">
+        <MappingFragment StoreEntitySet="CustomerCoupon">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerGroups">
+      <EntityTypeMapping TypeName="koreaModel.CustomerGroup">
+        <MappingFragment StoreEntitySet="CustomerGroup">
+          <ScalarProperty Name="CustomerGroupID" ColumnName="CustomerGroupID" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="GroupDiscount" ColumnName="GroupDiscount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeoIPs">
+      <EntityTypeMapping TypeName="koreaModel.GeoIP">
+        <MappingFragment StoreEntitySet="GeoIP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="begin_num" ColumnName="begin_num" />
+          <ScalarProperty Name="end_num" ColumnName="end_num" />
+          <ScalarProperty Name="country_code" ColumnName="country_code" />
+          <ScalarProperty Name="country_name" ColumnName="country_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RecentlyViewsDatas">
+      <EntityTypeMapping TypeName="koreaModel.RecentlyViewsData">
+        <MappingFragment StoreEntitySet="RecentlyViewsData">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ViewDate" ColumnName="ViewDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regions">
+      <EntityTypeMapping TypeName="koreaModel.Region">
+        <MappingFragment StoreEntitySet="Region">
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="RegionCode" ColumnName="RegionCode" />
+          <ScalarProperty Name="RegionSort" ColumnName="RegionSort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleActions">
+      <EntityTypeMapping TypeName="koreaModel.RoleAction">
+        <MappingFragment StoreEntitySet="RoleAction">
+          <ScalarProperty Name="RoleActionID" ColumnName="RoleActionID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Key" ColumnName="Key" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ASPStateTempApplications">
+      <EntityTypeMapping TypeName="koreaModel.ASPStateTempApplication">
+        <MappingFragment StoreEntitySet="ASPStateTempApplications">
+          <ScalarProperty Name="AppId" ColumnName="AppId" />
+          <ScalarProperty Name="AppName" ColumnName="AppName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ASPStateTempSessions">
+      <EntityTypeMapping TypeName="koreaModel.ASPStateTempSession">
+        <MappingFragment StoreEntitySet="ASPStateTempSessions">
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="LockDate" ColumnName="LockDate" />
+          <ScalarProperty Name="LockDateLocal" ColumnName="LockDateLocal" />
+          <ScalarProperty Name="LockCookie" ColumnName="LockCookie" />
+          <ScalarProperty Name="Timeout" ColumnName="Timeout" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="SessionItemShort" ColumnName="SessionItemShort" />
+          <ScalarProperty Name="SessionItemLong" ColumnName="SessionItemLong" />
+          <ScalarProperty Name="Flags" ColumnName="Flags" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BreakMessages">
+      <EntityTypeMapping TypeName="koreaModel.BreakMessage">
+        <MappingFragment StoreEntitySet="BreakMessage">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageLogs">
+      <EntityTypeMapping TypeName="koreaModel.MessageLog">
+        <MappingFragment StoreEntitySet="MessageLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="MessageText" ColumnName="MessageText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modules">
+      <EntityTypeMapping TypeName="koreaModel.Module">
+        <MappingFragment StoreEntitySet="Modules">
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="ModuleStringID" ColumnName="ModuleStringID" />
+          <ScalarProperty Name="IsInstall" ColumnName="IsInstall" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaasDatas">
+      <EntityTypeMapping TypeName="koreaModel.SaasData">
+        <MappingFragment StoreEntitySet="SaasData">
+          <ScalarProperty Name="Key" ColumnName="Key" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subscribes">
+      <EntityTypeMapping TypeName="koreaModel.Subscribe">
+        <MappingFragment StoreEntitySet="Subscribe">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="ActivateCode" ColumnName="ActivateCode" />
+          <ScalarProperty Name="DectivateCode" ColumnName="DectivateCode" />
+          <ScalarProperty Name="ActivateDate" ColumnName="ActivateDate" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubscribeDeactivateReasons">
+      <EntityTypeMapping TypeName="koreaModel.SubscribeDeactivateReason">
+        <MappingFragment StoreEntitySet="SubscribeDeactivateReason">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MessageText" ColumnName="MessageText" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="koreaModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AppRestartLogs">
+      <EntityTypeMapping TypeName="koreaModel.AppRestartLog">
+        <MappingFragment StoreEntitySet="AppRestartLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RestartDate" ColumnName="RestartDate" />
+          <ScalarProperty Name="ServerName" ColumnName="ServerName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Certificates">
+      <EntityTypeMapping TypeName="koreaModel.Certificate">
+        <MappingFragment StoreEntitySet="Certificate">
+          <ScalarProperty Name="CertificateID" ColumnName="CertificateID" />
+          <ScalarProperty Name="CertificateCode" ColumnName="CertificateCode" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="FromName" ColumnName="FromName" />
+          <ScalarProperty Name="ToName" ColumnName="ToName" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Used" ColumnName="Used" />
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="ToEmail" ColumnName="ToEmail" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ApplyOrderNumber" ColumnName="ApplyOrderNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="koreaModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="ShippingMethodID" ColumnName="ShippingMethodID" />
+          <ScalarProperty Name="PaymentMethodID" ColumnName="PaymentMethodID" />
+          <ScalarProperty Name="AffiliateID" ColumnName="AffiliateID" />
+          <ScalarProperty Name="OrderDiscount" ColumnName="OrderDiscount" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="GroupDiscount" ColumnName="GroupDiscount" />
+          <ScalarProperty Name="CustomerComment" ColumnName="CustomerComment" />
+          <ScalarProperty Name="StatusComment" ColumnName="StatusComment" />
+          <ScalarProperty Name="AdditionalTechInfo" ColumnName="AdditionalTechInfo" />
+          <ScalarProperty Name="AdminOrderComment" ColumnName="AdminOrderComment" />
+          <ScalarProperty Name="Decremented" ColumnName="Decremented" />
+          <ScalarProperty Name="ShippingCost" ColumnName="ShippingCost" />
+          <ScalarProperty Name="TaxCost" ColumnName="TaxCost" />
+          <ScalarProperty Name="SupplyTotal" ColumnName="SupplyTotal" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
+          <ScalarProperty Name="ShippingContactID" ColumnName="ShippingContactID" />
+          <ScalarProperty Name="BillingContactID" ColumnName="BillingContactID" />
+          <ScalarProperty Name="PaymentMethodName" ColumnName="PaymentMethodName" />
+          <ScalarProperty Name="ShippingMethodName" ColumnName="ShippingMethodName" />
+          <ScalarProperty Name="CertificateCode" ColumnName="CertificateCode" />
+          <ScalarProperty Name="CertificatePrice" ColumnName="CertificatePrice" />
+          <ScalarProperty Name="CouponCode" ColumnName="CouponCode" />
+          <ScalarProperty Name="CouponType" ColumnName="CouponType" />
+          <ScalarProperty Name="CouponValue" ColumnName="CouponValue" />
+          <ScalarProperty Name="PaymentCost" ColumnName="PaymentCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderByRequests">
+      <EntityTypeMapping TypeName="koreaModel.OrderByRequest">
+        <MappingFragment StoreEntitySet="OrderByRequest">
+          <ScalarProperty Name="OrderByRequestId" ColumnName="OrderByRequestId" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ArtNo" ColumnName="ArtNo" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IsComplete" ColumnName="IsComplete" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CodeCreateDate" ColumnName="CodeCreateDate" />
+          <ScalarProperty Name="OfferID" ColumnName="OfferID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderConfirmations">
+      <EntityTypeMapping TypeName="koreaModel.OrderConfirmation">
+        <MappingFragment StoreEntitySet="OrderConfirmation">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="OrderConfirmationData" ColumnName="OrderConfirmationData" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderContacts">
+      <EntityTypeMapping TypeName="koreaModel.OrderContact">
+        <MappingFragment StoreEntitySet="OrderContact">
+          <ScalarProperty Name="OrderContactID" ColumnName="OrderContactID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderCurrencies">
+      <EntityTypeMapping TypeName="koreaModel.OrderCurrency">
+        <MappingFragment StoreEntitySet="OrderCurrency">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="CurrencyNumCode" ColumnName="CurrencyNumCode" />
+          <ScalarProperty Name="CurrencyValue" ColumnName="CurrencyValue" />
+          <ScalarProperty Name="CurrencySymbol" ColumnName="CurrencySymbol" />
+          <ScalarProperty Name="IsCodeBefore" ColumnName="IsCodeBefore" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderCustomers">
+      <EntityTypeMapping TypeName="koreaModel.OrderCustomer">
+        <MappingFragment StoreEntitySet="OrderCustomer">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerIP" ColumnName="CustomerIP" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderCustomOptions">
+      <EntityTypeMapping TypeName="koreaModel.OrderCustomOption">
+        <MappingFragment StoreEntitySet="OrderCustomOptions">
+          <ScalarProperty Name="OrderCustomOptionsId" ColumnName="OrderCustomOptionsId" />
+          <ScalarProperty Name="CustomOptionId" ColumnName="CustomOptionId" />
+          <ScalarProperty Name="OptionId" ColumnName="OptionId" />
+          <ScalarProperty Name="CustomOptionTitle" ColumnName="CustomOptionTitle" />
+          <ScalarProperty Name="OptionTitle" ColumnName="OptionTitle" />
+          <ScalarProperty Name="OptionPriceBC" ColumnName="OptionPriceBC" />
+          <ScalarProperty Name="OptionPriceType" ColumnName="OptionPriceType" />
+          <ScalarProperty Name="OrderedCartID" ColumnName="OrderedCartID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderItems">
+      <EntityTypeMapping TypeName="koreaModel.OrderItem">
+        <MappingFragment StoreEntitySet="OrderItems">
+          <ScalarProperty Name="OrderItemID" ColumnName="OrderItemID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="ArtNo" ColumnName="ArtNo" />
+          <ScalarProperty Name="SupplyPrice" ColumnName="SupplyPrice" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="IsCouponApplied" ColumnName="IsCouponApplied" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="DecrementedAmount" ColumnName="DecrementedAmount" />
+          <ScalarProperty Name="PhotoID" ColumnName="PhotoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderPickPoints">
+      <EntityTypeMapping TypeName="koreaModel.OrderPickPoint">
+        <MappingFragment StoreEntitySet="OrderPickPoint">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="PickPointId" ColumnName="PickPointId" />
+          <ScalarProperty Name="PickPointAddress" ColumnName="PickPointAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderPriceDiscounts">
+      <EntityTypeMapping TypeName="koreaModel.OrderPriceDiscount">
+        <MappingFragment StoreEntitySet="OrderPriceDiscount">
+          <ScalarProperty Name="OrderPriceDiscountID" ColumnName="OrderPriceDiscountID" />
+          <ScalarProperty Name="PriceRange" ColumnName="PriceRange" />
+          <ScalarProperty Name="PercentDiscount" ColumnName="PercentDiscount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderStatus">
+      <EntityTypeMapping TypeName="koreaModel.OrderStatu">
+        <MappingFragment StoreEntitySet="OrderStatus">
+          <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="CommandID" ColumnName="CommandID" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="IsCanceled" ColumnName="IsCanceled" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderTaxes">
+      <EntityTypeMapping TypeName="koreaModel.OrderTax">
+        <MappingFragment StoreEntitySet="OrderTax">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="TaxId" ColumnName="TaxId" />
+          <ScalarProperty Name="TaxName" ColumnName="TaxName" />
+          <ScalarProperty Name="TaxSum" ColumnName="TaxSum" />
+          <ScalarProperty Name="TaxShowInPrice" ColumnName="TaxShowInPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentDetails">
+      <EntityTypeMapping TypeName="koreaModel.PaymentDetail">
+        <MappingFragment StoreEntitySet="PaymentDetails">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentMethods">
+      <EntityTypeMapping TypeName="koreaModel.PaymentMethod">
+        <MappingFragment StoreEntitySet="PaymentMethod">
+          <ScalarProperty Name="PaymentMethodID" ColumnName="PaymentMethodID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="IconFileName" ColumnName="IconFileName" />
+          <ScalarProperty Name="Extracharge" ColumnName="Extracharge" />
+          <ScalarProperty Name="ExtrachargeType" ColumnName="ExtrachargeType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentParams">
+      <EntityTypeMapping TypeName="koreaModel.PaymentParam">
+        <MappingFragment StoreEntitySet="PaymentParam">
+          <ScalarProperty Name="PaymentMethodID" ColumnName="PaymentMethodID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShippingMethods">
+      <EntityTypeMapping TypeName="koreaModel.ShippingMethod">
+        <MappingFragment StoreEntitySet="ShippingMethod">
+          <ScalarProperty Name="ShippingMethodID" ColumnName="ShippingMethodID" />
+          <ScalarProperty Name="ShippingType" ColumnName="ShippingType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="IconFileName" ColumnName="IconFileName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShippingParams">
+      <EntityTypeMapping TypeName="koreaModel.ShippingParam">
+        <MappingFragment StoreEntitySet="ShippingParam">
+          <ScalarProperty Name="ShippingParamID" ColumnName="ShippingParamID" />
+          <ScalarProperty Name="ShippingMethodID" ColumnName="ShippingMethodID" />
+          <ScalarProperty Name="ParamName" ColumnName="ParamName" />
+          <ScalarProperty Name="ParamValue" ColumnName="ParamValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MetaInfoes">
+      <EntityTypeMapping TypeName="koreaModel.MetaInfo">
+        <MappingFragment StoreEntitySet="MetaInfo">
+          <ScalarProperty Name="MetaID" ColumnName="MetaID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="MetaKeywords" ColumnName="MetaKeywords" />
+          <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+          <ScalarProperty Name="ObjId" ColumnName="ObjId" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Settings">
+      <EntityTypeMapping TypeName="koreaModel.Setting">
+        <MappingFragment StoreEntitySet="Settings">
+          <ScalarProperty Name="SettingID" ColumnName="SettingID" />
+          <ScalarProperty Name="ParamName" ColumnName="ParamName" />
+          <ScalarProperty Name="ParamValue" ColumnName="ParamValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuthorizeLogs">
+      <EntityTypeMapping TypeName="koreaModel.AuthorizeLog">
+        <MappingFragment StoreEntitySet="AuthorizeLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="isAdmin" ColumnName="isAdmin" />
+          <ScalarProperty Name="UserIP" ColumnName="UserIP" />
+          <ScalarProperty Name="isSuccess" ColumnName="isSuccess" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExportFeedHistories">
+      <EntityTypeMapping TypeName="koreaModel.ExportFeedHistory">
+        <MappingFragment StoreEntitySet="ExportFeedHistory">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="moduleName" ColumnName="moduleName" />
+          <ScalarProperty Name="filePath" ColumnName="filePath" />
+          <ScalarProperty Name="fileLink" ColumnName="fileLink" />
+          <ScalarProperty Name="fileSize" ColumnName="fileSize" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExportFeedSelectedCategories">
+      <EntityTypeMapping TypeName="koreaModel.ExportFeedSelectedCategory">
+        <MappingFragment StoreEntitySet="ExportFeedSelectedCategories">
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExportFeedSelectedProducts">
+      <EntityTypeMapping TypeName="koreaModel.ExportFeedSelectedProduct">
+        <MappingFragment StoreEntitySet="ExportFeedSelectedProducts">
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GiftCertificateTaxes">
+      <EntityTypeMapping TypeName="koreaModel.GiftCertificateTax">
+        <MappingFragment StoreEntitySet="GiftCertificateTaxes">
+          <ScalarProperty Name="TaxID" ColumnName="TaxID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InternalSettings">
+      <EntityTypeMapping TypeName="koreaModel.InternalSetting">
+        <MappingFragment StoreEntitySet="InternalSettings">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="settingKey" ColumnName="settingKey" />
+          <ScalarProperty Name="settingValue" ColumnName="settingValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="koreaModel.Language">
+        <MappingFragment StoreEntitySet="Language">
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LanguageCode" ColumnName="LanguageCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MailFormats">
+      <EntityTypeMapping TypeName="koreaModel.MailFormat">
+        <MappingFragment StoreEntitySet="MailFormat">
+          <ScalarProperty Name="MailFormatID" ColumnName="MailFormatID" />
+          <ScalarProperty Name="FormatName" ColumnName="FormatName" />
+          <ScalarProperty Name="FormatText" ColumnName="FormatText" />
+          <ScalarProperty Name="FormatType" ColumnName="FormatType" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MailFormatTypes">
+      <EntityTypeMapping TypeName="koreaModel.MailFormatType">
+        <MappingFragment StoreEntitySet="MailFormatType">
+          <ScalarProperty Name="MailFormatTypeID" ColumnName="MailFormatTypeID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModuleSettings">
+      <EntityTypeMapping TypeName="koreaModel.ModuleSetting">
+        <MappingFragment StoreEntitySet="ModuleSettings">
+          <ScalarProperty Name="SettingID" ColumnName="SettingID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="koreaModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="NewsCategoryID" ColumnName="NewsCategoryID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TextToPublication" ColumnName="TextToPublication" />
+          <ScalarProperty Name="TextToEmail" ColumnName="TextToEmail" />
+          <ScalarProperty Name="TextAnnotation" ColumnName="TextAnnotation" />
+          <ScalarProperty Name="ShowOnMainPage" ColumnName="ShowOnMainPage" />
+          <ScalarProperty Name="AddingDate" ColumnName="AddingDate" />
+          <ScalarProperty Name="UrlPath" ColumnName="UrlPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsCategories">
+      <EntityTypeMapping TypeName="koreaModel.NewsCategory">
+        <MappingFragment StoreEntitySet="NewsCategory">
+          <ScalarProperty Name="NewsCategoryID" ColumnName="NewsCategoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="UrlPath" ColumnName="UrlPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProfitPlans">
+      <EntityTypeMapping TypeName="koreaModel.ProfitPlan">
+        <MappingFragment StoreEntitySet="ProfitPlan">
+          <ScalarProperty Name="PlanID" ColumnName="PlanID" />
+          <ScalarProperty Name="SalesPlan" ColumnName="SalesPlan" />
+          <ScalarProperty Name="ProfitPlan1" ColumnName="ProfitPlan" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ranges">
+      <EntityTypeMapping TypeName="koreaModel.Ranx">
+        <MappingFragment StoreEntitySet="Ranges">
+          <ScalarProperty Name="RangeID" ColumnName="RangeID" />
+          <ScalarProperty Name="Bound" ColumnName="Bound" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Redirects">
+      <EntityTypeMapping TypeName="koreaModel.Redirect">
+        <MappingFragment StoreEntitySet="Redirect">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RedirectFrom" ColumnName="RedirectFrom" />
+          <ScalarProperty Name="RedirectTo" ColumnName="RedirectTo" />
+          <ScalarProperty Name="ProductArtNo" ColumnName="ProductArtNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Settings1">
+      <EntityTypeMapping TypeName="koreaModel.Settings1">
+        <MappingFragment StoreEntitySet="Settings1">
+          <ScalarProperty Name="SettingID" ColumnName="SettingID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchStatistics">
+      <EntityTypeMapping TypeName="koreaModel.SearchStatistic">
+        <MappingFragment StoreEntitySet="SearchStatistic">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Request" ColumnName="Request" />
+          <ScalarProperty Name="ResultCount" ColumnName="ResultCount" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SearchTerm" ColumnName="SearchTerm" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Answers">
+      <EntityTypeMapping TypeName="koreaModel.Answer">
+        <MappingFragment StoreEntitySet="Answer">
+          <ScalarProperty Name="AnswerID" ColumnName="AnswerID" />
+          <ScalarProperty Name="FKIDTheme" ColumnName="FKIDTheme" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CountVoice" ColumnName="CountVoice" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="IsVisible" ColumnName="IsVisible" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="DateModify" ColumnName="DateModify" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VoiceThemes">
+      <EntityTypeMapping TypeName="koreaModel.VoiceTheme">
+        <MappingFragment StoreEntitySet="VoiceTheme">
+          <ScalarProperty Name="VoiceThemeID" ColumnName="VoiceThemeID" />
+          <ScalarProperty Name="PSYID" ColumnName="PSYID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsHaveNullVoice" ColumnName="IsHaveNullVoice" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="IsClose" ColumnName="IsClose" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="DateModify" ColumnName="DateModify" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientInfoes">
+      <EntityTypeMapping TypeName="koreaModel.ClientInfo">
+        <MappingFragment StoreEntitySet="ClientInfo">
+          <ScalarProperty Name="sessionID" ColumnName="sessionID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="UserAgentBrowser" ColumnName="UserAgentBrowser" />
+          <ScalarProperty Name="LastAccessedPath" ColumnName="LastAccessedPath" />
+          <ScalarProperty Name="Started" ColumnName="Started" />
+          <ScalarProperty Name="UserAgentOS" ColumnName="UserAgentOS" />
+          <ScalarProperty Name="CountryByGeoIp" ColumnName="CountryByGeoIp" />
+          <ScalarProperty Name="Ended" ColumnName="Ended" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Country_en">
+      <EntityTypeMapping TypeName="koreaModel.Country_en">
+        <MappingFragment StoreEntitySet="Country_en">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryISO2" ColumnName="CountryISO2" />
+          <ScalarProperty Name="CountryISO3" ColumnName="CountryISO3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerRoleActions">
+      <EntityTypeMapping TypeName="koreaModel.CustomerRoleAction">
+        <MappingFragment StoreEntitySet="CustomerRoleAction">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="RoleActionKey" ColumnName="RoleActionKey" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OpenIdLinkCustomers">
+      <EntityTypeMapping TypeName="koreaModel.OpenIdLinkCustomer">
+        <MappingFragment StoreEntitySet="OpenIdLinkCustomer">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="OpenIdIdentifier" ColumnName="OpenIdIdentifier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdminMessages">
+      <EntityTypeMapping TypeName="koreaModel.AdminMessage">
+        <MappingFragment StoreEntitySet="AdminMessages">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Viewed" ColumnName="Viewed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderPaymentInfoes">
+      <EntityTypeMapping TypeName="koreaModel.OrderPaymentInfo">
+        <MappingFragment StoreEntitySet="OrderPaymentInfo">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="PaymentMethodID" ColumnName="PaymentMethodID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GiftCertificatePayments">
+      <EntityTypeMapping TypeName="koreaModel.GiftCertificatePayment">
+        <MappingFragment StoreEntitySet="GiftCertificatePayments">
+          <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="CouponCategories" TypeName="koreaModel.CouponCategories" StoreEntitySet="CouponCategories">
+      <EndProperty Name="Category">
+        <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+      </EndProperty>
+      <EndProperty Name="Coupon">
+        <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="CouponCustomers" TypeName="koreaModel.CouponCustomers" StoreEntitySet="CouponCustomers">
+      <EndProperty Name="Coupon">
+        <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+      </EndProperty>
+      <EndProperty Name="Customer">
+        <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="CouponProducts" TypeName="koreaModel.CouponProducts" StoreEntitySet="CouponProducts">
+      <EndProperty Name="Product">
+        <ScalarProperty Name="ProductId" ColumnName="ProductID" />
+      </EndProperty>
+      <EndProperty Name="Coupon">
+        <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TaxMappingOnProduct" TypeName="koreaModel.TaxMappingOnProduct" StoreEntitySet="TaxMappingOnProduct">
+      <EndProperty Name="Product">
+        <ScalarProperty Name="ProductId" ColumnName="ProductID" />
+      </EndProperty>
+      <EndProperty Name="Tax">
+        <ScalarProperty Name="TaxID" ColumnName="TaxID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TaxSelectedCategories" TypeName="koreaModel.TaxSelectedCategories" StoreEntitySet="TaxSelectedCategories">
+      <EndProperty Name="Category">
+        <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+      </EndProperty>
+      <EndProperty Name="Tax">
+        <ScalarProperty Name="TaxID" ColumnName="TaxID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PaymentCity" TypeName="koreaModel.PaymentCity" StoreEntitySet="PaymentCity">
+      <EndProperty Name="City">
+        <ScalarProperty Name="CityID" ColumnName="CityId" />
+      </EndProperty>
+      <EndProperty Name="PaymentMethod">
+        <ScalarProperty Name="PaymentMethodID" ColumnName="MethodId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PaymentCountry" TypeName="koreaModel.PaymentCountry" StoreEntitySet="PaymentCountry">
+      <EndProperty Name="Country">
+        <ScalarProperty Name="CountryID" ColumnName="CountryId" />
+      </EndProperty>
+      <EndProperty Name="PaymentMethod">
+        <ScalarProperty Name="PaymentMethodID" ColumnName="MethodId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ShippingCity" TypeName="koreaModel.ShippingCity" StoreEntitySet="ShippingCity">
+      <EndProperty Name="City">
+        <ScalarProperty Name="CityID" ColumnName="CityId" />
+      </EndProperty>
+      <EndProperty Name="ShippingMethod">
+        <ScalarProperty Name="ShippingMethodID" ColumnName="MethodId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ShippingCountry" TypeName="koreaModel.ShippingCountry" StoreEntitySet="ShippingCountry">
+      <EndProperty Name="Country">
+        <ScalarProperty Name="CountryID" ColumnName="CountryId" />
+      </EndProperty>
+      <EndProperty Name="ShippingMethod">
+        <ScalarProperty Name="ShippingMethodID" ColumnName="MethodId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ShippingPayments" TypeName="koreaModel.ShippingPayments" StoreEntitySet="ShippingPayments">
+      <EndProperty Name="PaymentMethod">
+        <ScalarProperty Name="PaymentMethodID" ColumnName="PaymentMethodID" />
+      </EndProperty>
+      <EndProperty Name="ShippingMethod">
+        <ScalarProperty Name="ShippingMethodID" ColumnName="ShippingMethodID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,30 @@
+﻿@model IEnumerable< GenerationForImport >
+@{
+    ViewBag.Title = "Список поколений автомобилий";
+}
+<h1>@ViewBag.Title</h1>
+@Html.ActionLink("Добавить", "Create", null, new { @class = "btn btn-primary" })
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <td>Название</td>
+            <td>Марка</td>
+            <td>Вес</td>
+            <td>Операции</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (GenerationForImport model in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => model.Title)</td>
+                <td class="TableCenter">@Html.DisplayFor(modelItem => model.Model.Title)</td>
+                <td class="TableCenter">@Html.DisplayFor(modelItem => model.Weight)</td>
+                <td class="TableBtn">
+                    @Html.ActionLink("Редактировать", "Edit", new { @Id = model.Id }, new { @class = "btn btn-primary btn-sm" })
+                    @Html.ActionLink("Удалить", "Delete", new { @Id = model.Id }, new { @class = "btn btn-warning btn-sm" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

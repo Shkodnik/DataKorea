@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Загрузка фалов";
+}
+
+
+
+<div class="mainWidth">
+    <div class="mediumCenterBlock">
+        <h2>@ViewBag.Title</h2>
+        @using (Html.BeginForm("Loding", "Download", new { enctype = "multipart/form-data" }))
+        {
+            <dl class="dl-horizontal">
+                <dt>
+                    Загрузка прайса:
+                </dt>
+                <dd>
+                    <input name="Price" required type="file" class="imputFile" />
+                </dd>
+
+
+                <dt>
+                    Загрузка аналогов:
+                </dt>
+                <dd>
+                    <input name="Analog" required type="file" class="imputFile" />
+                </dd>
+
+                <dt>
+                    Загрузка остатков:
+                </dt>
+                <dd>
+                    <input name="Ostatok" required type="file" class="imputFile" />
+                </dd>
+
+
+            </dl>
+    <input value="Загрузить" type="submit" class="btn btn-primary" />
+        }
+
+    </div>
+
+</div>

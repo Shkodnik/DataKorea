@@ -1,0 +1,6 @@
+﻿@model ICollection< GenerationForImport >
+
+@foreach (GenerationForImport idex in Model)
+{ 
+    <p>@Html.DisplayFor(modelItem => idex.Title)</p> <br />
+}

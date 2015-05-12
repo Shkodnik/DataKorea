@@ -1,0 +1,40 @@
+﻿@model Korea.Models.Domain.GenerationForImport
+
+@{
+    ViewBag.Title = "Удаление поколений";
+}
+
+<div class="mainWidth">
+    <div class="mediumCenterBlock">
+        <h1>@ViewBag.Title</h1>
+        <h3>Действительно удалить представленое ниже поколение?</h3>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Weight)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Weight)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm("DeletePost", "Generation", FormMethod.Post))
+        {
+            @Html.HiddenFor(model => model.Id)
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Назад к списку", "Index")
+            </div>
+        }
+    </div>
+</div>
